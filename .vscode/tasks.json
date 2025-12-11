@@ -4,8 +4,14 @@
     {
       "label": "Run SQL file",
       "type": "shell",
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
       "command": "npm",
-      "args": ["run", "sql", "${relativeFile}"],
+      "args": ["run", "sql:en", "${relativeFile}"],
       "group": {
         "kind": "build",
         "isDefault": true
